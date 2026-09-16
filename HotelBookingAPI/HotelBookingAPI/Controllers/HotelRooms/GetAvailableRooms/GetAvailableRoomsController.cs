@@ -31,8 +31,8 @@ namespace HotelBookingAPI.Controllers.HotelRooms.GetAvailableRooms
             if (fromDate == DateTime.MinValue || toDate == DateTime.MinValue)
                 return BadRequest("Invalid date times");
 
-            if (toDate < fromDate)
-                return BadRequest("To date cannot be less than from date");
+            if (toDate.Date <= fromDate.Date)
+                return BadRequest("To date cannot be less or equal to from date");
 
             if (numberOfPeople == 0)
                 return BadRequest("Number of people must be greater than 0");

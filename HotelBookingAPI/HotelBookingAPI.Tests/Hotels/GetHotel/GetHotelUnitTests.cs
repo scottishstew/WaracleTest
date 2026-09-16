@@ -1,6 +1,4 @@
-﻿using HotelBookingAPI.Controllers.HotelRooms.GetAvailableRooms;
-using HotelBookingAPI.Controllers.Hotels.GetHotel;
-using HotelBookingAPI.Core.Queries.GetBooking;
+﻿using HotelBookingAPI.Controllers.Hotels.GetHotel;
 using HotelBookingAPI.Tests.Mocks;
 using Microsoft.AspNetCore.Mvc;
 

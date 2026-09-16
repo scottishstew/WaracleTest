@@ -55,7 +55,7 @@ namespace HotelBookingAPI.Tests.HotelRooms.GetAvailableRooms
             var result = await controller.Get(mediatrMock.Object, fromDate, toDate, 1);
 
             var badRequestResult = result as BadRequestObjectResult;
-            Assert.AreEqual("To date cannot be less than from date", badRequestResult.Value);
+            Assert.AreEqual("To date cannot be less or equal to from date", badRequestResult.Value);
             Assert.AreEqual(400, badRequestResult!.StatusCode);
         }
 
