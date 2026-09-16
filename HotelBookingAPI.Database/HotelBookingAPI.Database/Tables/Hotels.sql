@@ -1,0 +1,5 @@
+﻿CREATE TABLE [Hotel].[Hotels]
+(
+	HotelId				UNIQUEIDENTIFIER	 NOT NULL		CONSTRAINT PK_Hotel_HotelId		 PRIMARY KEY,
+	HotelName			NVARCHAR(500)		 NOT NULL
+)

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HotelBookingAPI.Database", "HotelBookingAPI.Database\HotelBookingAPI.Database.sqlproj", "{04BA0CA7-C4F9-47F9-B83E-78269D32D095}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04BA0CA7-C4F9-47F9-B83E-78269D32D095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BA0CA7-C4F9-47F9-B83E-78269D32D095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BA0CA7-C4F9-47F9-B83E-78269D32D095}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{04BA0CA7-C4F9-47F9-B83E-78269D32D095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BA0CA7-C4F9-47F9-B83E-78269D32D095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BA0CA7-C4F9-47F9-B83E-78269D32D095}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3D2F5F4-3A44-42F2-B131-B8487C2A55A9}
+	EndGlobalSection
+EndGlobal
