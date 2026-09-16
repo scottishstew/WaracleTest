@@ -25,8 +25,11 @@ namespace HotelBookingAPI.Core.Commands.BookRoom
             HotelId = hotelId;
             HotelRoomId = hotelRoomId;
             BookingReference = bookingReference;
-            FromDate = fromDate;
-            ToDate = toDate;
+
+            // Assuming each hotel only allows guests to check in at 3pm, then checkout at 12pm
+            FromDate = new DateTime(fromDate.Year, fromDate.Month, fromDate.Day, 15,0,0);
+            ToDate = new DateTime(toDate.Year, toDate.Month, toDate.Day, 12, 0, 0);
+            
             BookerName = bookerName;
             NumberOfGuests = numberOfGuests;
         }
