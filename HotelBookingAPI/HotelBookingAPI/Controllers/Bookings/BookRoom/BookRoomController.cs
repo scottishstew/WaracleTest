@@ -30,8 +30,8 @@ namespace HotelBookingAPI.Controllers.Bookings.BookRoom
             if (request.FromDate == DateTime.MinValue || request.ToDate == DateTime.MinValue)
                 return BadRequest("Invalid date times");
 
-            if (request.ToDate < request.FromDate)
-                return BadRequest("To date cannot be less than from date");
+            if (request.ToDate.Date <= request.FromDate.Date)
+                return BadRequest("To date cannot be less than or the same as from date");
 
             if (string.IsNullOrWhiteSpace(request.BookerName))
                 return BadRequest("Booker name is required");
