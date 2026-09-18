@@ -36,7 +36,7 @@ namespace HotelBookingAPI.Controllers.Bookings.BookRoom
             if (string.IsNullOrWhiteSpace(request.BookerName))
                 return BadRequest("Booker name is required");
 
-            if (request.NumberOfGuests == 0)
+            if (request.NumberOfGuests <= 0)
                 return BadRequest("Invalid number of guests");
 
             var hotelExists = await mediator.Send(new HotelExistsQuery(request.HotelId));
