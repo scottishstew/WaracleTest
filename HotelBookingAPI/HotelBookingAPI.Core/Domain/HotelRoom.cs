@@ -23,7 +23,7 @@
 
         public bool ValidateGuestCount(int guestCount)
         {
-            if (guestCount == 0)
+            if (guestCount <= 0)
                 return false;
 
             if (RoomType == HotelRoomType.Single && guestCount > 1)
